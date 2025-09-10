@@ -1,0 +1,583 @@
+[
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "AddAStudent",
+    "RelativePath": "School",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "school",
+        "Type": "MadreseV6.Domain.DTOs.SchoolDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "SeeAllSchools",
+    "RelativePath": "School",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "DeleteSchool",
+    "RelativePath": "School/{schoolid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "SeeASchool",
+    "RelativePath": "School/{schoolid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "UpdateASchool",
+    "RelativePath": "School/{schoolid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "school",
+        "Type": "MadreseV6.Domain.DTOs.SchoolDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "AddAGrade",
+    "RelativePath": "School/{schoolid}/Grades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeDTO",
+        "Type": "MadreseV6.Domain.DTOs.GradeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "SeeAllGrades",
+    "RelativePath": "School/{schoolid}/Grades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "DeleteGrade",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "SeeAGrade",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "UpdateAGrade",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "grade",
+        "Type": "MadreseV6.Domain.DTOs.GradeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "AddACourse",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}/Courses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "course",
+        "Type": "MadreseV6.Domain.DTOs.CourseDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "SeeAllCourses",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}/Courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "DeleteCourse",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}/Courses/{courseid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "courseid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "SeeACourse",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}/Courses/{courseid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "courseid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.SchoolController",
+    "Method": "UpdateACourse",
+    "RelativePath": "School/{schoolid}/Grades/{gradeid}/Courses/{courseid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "courseid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "course",
+        "Type": "MadreseV6.Domain.DTOs.CourseDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.StudentController",
+    "Method": "AddAStudent",
+    "RelativePath": "Student",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "student",
+        "Type": "MadreseV6.Domain.DTOs.StudentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.StudentController",
+    "Method": "SeeAllStudents",
+    "RelativePath": "Student",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.StudentController",
+    "Method": "DeleteAStudent",
+    "RelativePath": "Student/{studentid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "studentid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.StudentController",
+    "Method": "SeeAStudent",
+    "RelativePath": "Student/{studentid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "studentid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.StudentController",
+    "Method": "UpdateAStudent",
+    "RelativePath": "Student/{studentid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "studentid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "student",
+        "Type": "MadreseV6.Domain.DTOs.StudentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.TeacherController",
+    "Method": "AddATeacher",
+    "RelativePath": "Teacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "teacher",
+        "Type": "MadreseV6.Domain.DTOs.TeacherDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.TeacherController",
+    "Method": "SeeAllTeachers",
+    "RelativePath": "Teacher",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.TeacherController",
+    "Method": "DeleteATeacher",
+    "RelativePath": "Teacher/{teacherid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "teacherid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.TeacherController",
+    "Method": "SeeATeacher",
+    "RelativePath": "Teacher/{teacherid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "teacherid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.TeacherController",
+    "Method": "UpdateATeacher",
+    "RelativePath": "Teacher/{teacherid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "teacherid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teacher",
+        "Type": "MadreseV6.Domain.DTOs.TeacherDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.TeacherController",
+    "Method": "AppendTeacherToCourse",
+    "RelativePath": "Teacher/{teacherid}/AddCourse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schoolid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "gradeid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "courseid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "teacherid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MadreseV6.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MadreseV6.WeatherForecast, MadreseV6, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
