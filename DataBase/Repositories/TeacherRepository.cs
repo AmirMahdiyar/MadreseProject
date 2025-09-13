@@ -52,7 +52,7 @@ namespace MadreseV6.DataBase.Repositories
         public List<Teacher> GetAllTeachers(int schoolid)
         {
             var school = _context.Schools.Single(x=>x.SchoolId == schoolid);
-            var teachers = _context.Teachers.Where(x=>x.SchoolId ==schoolid).ToList();
+            var teachers = _context.Teachers.Include(x=>x.Courses).Include(x=>x.Grades).Where(x=>x.SchoolId ==schoolid).ToList();
             
             if (school == null)
                 throw new Exception("DataNotFound");

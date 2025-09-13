@@ -12,14 +12,15 @@ namespace MadreseV6.Domain.SchoolAggregate
 
 
         public int GradeId { get; set; }
-        [JsonIgnore]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public Grade Grade { get; set; }
 
 
         public int? TeacherId { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public Teacher Teacher { get; set; }
 
-
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public IList<StudentsCourse> Students { get; set; } = new List<StudentsCourse>();
 
     }

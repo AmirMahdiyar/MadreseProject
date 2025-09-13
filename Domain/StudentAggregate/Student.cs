@@ -1,5 +1,6 @@
 ﻿using MadreseV6.Domain.ManyToMany.StudentsCourse;
 using MadreseV6.Domain.SchoolAggregate;
+using System.Text.Json.Serialization;
 
 namespace MadreseV6.Domain.StudentAggregate
 {
@@ -12,14 +13,16 @@ namespace MadreseV6.Domain.StudentAggregate
 
 
         public int SchoolId { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public School School { get; set; }
 
 
 
         public int GradeId { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public Grade Grade { get; set; }
 
-
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public IList<StudentsCourse> Courses { get; set; } = new List<StudentsCourse>();
 
 

@@ -44,9 +44,15 @@ namespace MadreseV6.DataBase.Repositories
 
         public Course GetCourse(int schoolid, int gradeid, int courseid)
         {
-            var grade = _context.Grades.Include(g => g.Courses).Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
-            var course = grade.Courses.Single(x=>x.CourseId == courseid);
-            return course;
+            //var grade = _context.Grades.Include(g => g.Courses).Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            var school = _context.Schools.Single(x => x.SchoolId == schoolid);
+            if (school == null)
+                throw new Exception("DataNotFoundd");
+            var coursee = _context.Courses.Include(x => x.Students).Include(x => x.Teacher).SingleOrDefault(x=>x.GradeId == gradeid && x.CourseId == courseid);
+            if (coursee == null)
+                throw new Exception("DataNotFound");
+            //var course = grade.Courses.Single(x=>x.CourseId == courseid);
+            return coursee;
         }
 
         public void RemoveCourse(int schoolid, int gradeid, int courseid)

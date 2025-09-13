@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MadreseV6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dab7a5cbdac3e6fc6f07d129d178a13230f1dbe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24180127f3a38128b2ec84422bef8a272d05706e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MadreseV6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MadreseV6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -45,7 +45,7 @@ namespace MadreseV6.DataBase.Repositories
         }
         public Grade GetGrade(int schoolid, int gradeid)
         {
-            var grade = _context.Grades.Include(x=>x.Teachers).Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            var grade = _context.Grades.Include(x=>x.Courses).Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
             if (grade == null) throw new Exception("Grade Not Found");
             return grade;
         }
@@ -54,7 +54,7 @@ namespace MadreseV6.DataBase.Repositories
         {
             return _context.Grades
                                .Where(g => g.SchoolId == schoolid)
-                                .Include(g => g.Teachers)                              
+                               .Include(x=>x.Courses)                             
                                         .ToList();
         }
         public void UpdateGrade(int schoolid, int gradeid, GradeDTO gradeDTO)

@@ -13,14 +13,15 @@ namespace MadreseV6.Domain.SchoolAggregate
 
         
         public int SchoolId { get; set; }
-        [JsonIgnore]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public School School { get; set; }
 
-
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public IList<Course> Courses { get; set; } = new List<Course>();
 
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public IList<TeachersGrade> Teachers { get; set; } = new List<TeachersGrade>();
-
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public IList<Student> Students { get; set; } = new List<Student>();
 
 

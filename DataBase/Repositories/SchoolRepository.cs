@@ -55,7 +55,7 @@ namespace MadreseV6.DataBase.Repositories
 
         public School GetSchool(int schoolid)
         {
-            var school = _context.Schools.FirstOrDefault(x => x.SchoolId == schoolid);
+            var school = _context.Schools.Include(x=>x.Grades).ThenInclude(x=>x.Courses).FirstOrDefault(x => x.SchoolId == schoolid);
             if (school != null)
             {
                 return school;
@@ -69,7 +69,7 @@ namespace MadreseV6.DataBase.Repositories
         }
         public List<School> GetAllSchools()
         {
-            return _context.Schools.ToList();
+            return _context.Schools.Include(x=>x.Grades).ThenInclude(x=>x.Courses).ToList();
         }
 
         public void UpdateSchool(int schoolid , SchoolDTO schooldto)
