@@ -38,7 +38,7 @@ namespace MadreseV6.DataBase.Repositories
 
         public void RemoveGrade(int schoolid, int gradeid)
         {
-            var grade = _context.Grades.Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            var grade = _context.Grades.SingleOrDefault(x => x.SchoolId == schoolid && x.GradeId == gradeid);
             if (grade == null) throw new Exception("Grade Not Found");
             _context.Grades.Remove(grade);
             _context.SaveChanges();

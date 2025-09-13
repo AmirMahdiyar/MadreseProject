@@ -3,128 +3,16 @@
   "WorkspaceRootPath": "D:\\API\\MadreseV6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\dtos\\schooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:dtos\\schooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\studentaggregate\\studentaggregate\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\studentaggregate\\studentaggregate\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\schoolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\schoolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\teacheraggregate\\teachercontract\\iteacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\teacheraggregate\\teachercontract\\iteacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\studentaggregate\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\studentaggregate\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\madresedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\madresedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\teacheraggregate\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\teacheraggregate\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\schoolaggregate\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\schoolaggregate\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\schoolaggregate\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\schoolaggregate\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\schoolaggregate\\schoolcontracts\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\schoolaggregate\\schoolcontracts\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\schoolaggregate\\schoolcontracts\\ischoolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\schoolaggregate\\schoolcontracts\\ischoolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\schoolaggregate\\schoolcontracts\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\schoolaggregate\\schoolcontracts\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\schoolaggregate\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\schoolaggregate\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\manytomany\\teachersgrade\\teachersgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\manytomany\\teachersgrade\\teachersgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\domain\\manytomany\\studentscourse\\studentscourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:domain\\manytomany\\studentscourse\\studentscourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\migrations\\20250910102537_teachersgradechangeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:migrations\\20250910102537_teachersgradechangeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\migrations\\20250910090425_teacherchanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:migrations\\20250910090425_teacherchanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -134,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,393 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TeacherRepository.cs",
+              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\TeacherRepository.cs",
+              "RelativeDocumentMoniker": "DataBase\\Repositories\\TeacherRepository.cs",
+              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\TeacherRepository.cs*",
+              "RelativeToolTip": "DataBase\\Repositories\\TeacherRepository.cs*",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwD8AAACKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:05:53.876Z",
+              "WhenOpened": "2025-09-13T12:36:16.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\StudentAggregate\\StudentAggregate\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\StudentAggregate\\StudentAggregate\\IStudentRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\StudentAggregate\\StudentAggregate\\IStudentRepository.cs",
-              "RelativeToolTip": "Domain\\StudentAggregate\\StudentAggregate\\IStudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:04:57.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:49:25.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SchoolRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\SchoolRepository.cs",
-              "RelativeDocumentMoniker": "DataBase\\Repositories\\SchoolRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\SchoolRepository.cs",
-              "RelativeToolTip": "DataBase\\Repositories\\SchoolRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T15:50:34.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeacherRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\TeacherRepository.cs",
-              "RelativeDocumentMoniker": "DataBase\\Repositories\\TeacherRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\TeacherRepository.cs",
-              "RelativeToolTip": "DataBase\\Repositories\\TeacherRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T08:26:42.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SchoolController.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\SchoolController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SchoolController.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\SchoolController.cs",
-              "RelativeToolTip": "Controllers\\SchoolController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T15:54:19.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SchoolDTO.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DTOs\\SchoolDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\SchoolDTO.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DTOs\\SchoolDTO.cs",
-              "RelativeToolTip": "DTOs\\SchoolDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T16:00:02.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "DataBase\\Repositories\\StudentRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\StudentRepository.cs",
-              "RelativeToolTip": "DataBase\\Repositories\\StudentRepository.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:06:13.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ITeacherRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\TeacherAggregate\\TeacherContract\\ITeacherRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\TeacherAggregate\\TeacherContract\\ITeacherRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\TeacherAggregate\\TeacherContract\\ITeacherRepository.cs",
-              "RelativeToolTip": "Domain\\TeacherAggregate\\TeacherContract\\ITeacherRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T08:27:31.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StudentDTO.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DTOs\\StudentDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\StudentDTO.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DTOs\\StudentDTO.cs",
-              "RelativeToolTip": "DTOs\\StudentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:04:25.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\StudentAggregate\\Student.cs",
-              "RelativeDocumentMoniker": "Domain\\StudentAggregate\\Student.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\StudentAggregate\\Student.cs",
-              "RelativeToolTip": "Domain\\StudentAggregate\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:41:34.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TeacherDTO.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DTOs\\TeacherDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\TeacherDTO.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DTOs\\TeacherDTO.cs",
-              "RelativeToolTip": "DTOs\\TeacherDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T08:27:03.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
               "ToolTip": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs",
               "RelativeToolTip": "Controllers\\TeacherController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDEAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T08:28:08.226Z",
+              "WhenOpened": "2025-09-13T12:36:13.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "20250910102537_TeachersGradeChangeed.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Migrations\\20250910102537_TeachersGradeChangeed.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250910102537_TeachersGradeChangeed.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Migrations\\20250910102537_TeachersGradeChangeed.cs",
-              "RelativeToolTip": "Migrations\\20250910102537_TeachersGradeChangeed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T10:25:37.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\TeacherAggregate\\Teacher.cs",
-              "RelativeDocumentMoniker": "Domain\\TeacherAggregate\\Teacher.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\TeacherAggregate\\Teacher.cs",
-              "RelativeToolTip": "Domain\\TeacherAggregate\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:41:45.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "GradeRepository.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\GradeRepository.cs",
               "RelativeDocumentMoniker": "DataBase\\Repositories\\GradeRepository.cs",
               "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\GradeRepository.cs",
               "RelativeToolTip": "DataBase\\Repositories\\GradeRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwDQAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:52:30.423Z",
+              "WhenOpened": "2025-09-13T12:29:02.532Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MadreseDbContext.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\MadreseDbContext.cs",
-              "RelativeDocumentMoniker": "DataBase\\MadreseDbContext.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\MadreseDbContext.cs",
-              "RelativeToolTip": "DataBase\\MadreseDbContext.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAYwIsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T15:16:21.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "20250910090425_TeacherChanged.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Migrations\\20250910090425_TeacherChanged.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250910090425_TeacherChanged.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Migrations\\20250910090425_TeacherChanged.cs",
-              "RelativeToolTip": "Migrations\\20250910090425_TeacherChanged.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T09:04:25.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CourseRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\CourseRepository.cs",
-              "RelativeDocumentMoniker": "DataBase\\Repositories\\CourseRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\CourseRepository.cs",
-              "RelativeToolTip": "DataBase\\Repositories\\CourseRepository.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T19:16:16.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\Course.cs",
-              "RelativeDocumentMoniker": "Domain\\SchoolAggregate\\Course.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\Course.cs",
-              "RelativeToolTip": "Domain\\SchoolAggregate\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:41:12.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Grade.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\Grade.cs",
-              "RelativeDocumentMoniker": "Domain\\SchoolAggregate\\Grade.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\Grade.cs",
-              "RelativeToolTip": "Domain\\SchoolAggregate\\Grade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:40:59.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CourseDTO.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DTOs\\CourseDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\CourseDTO.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DTOs\\CourseDTO.cs",
-              "RelativeToolTip": "DTOs\\CourseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T19:18:00.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GradeDTO.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\DTOs\\GradeDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\GradeDTO.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\DTOs\\GradeDTO.cs",
-              "RelativeToolTip": "DTOs\\GradeDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:23:36.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ISchoolRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\SchoolContracts\\ISchoolRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\SchoolAggregate\\SchoolContracts\\ISchoolRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\SchoolContracts\\ISchoolRepository.cs",
-              "RelativeToolTip": "Domain\\SchoolAggregate\\SchoolContracts\\ISchoolRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T15:52:21.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ICourseRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\SchoolContracts\\ICourseRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\SchoolAggregate\\SchoolContracts\\ICourseRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\SchoolContracts\\ICourseRepository.cs",
-              "RelativeToolTip": "Domain\\SchoolAggregate\\SchoolContracts\\ICourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T19:17:25.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "School.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\School.cs",
-              "RelativeDocumentMoniker": "Domain\\SchoolAggregate\\School.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\School.cs",
-              "RelativeToolTip": "Domain\\SchoolAggregate\\School.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:40:45.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IGradeRepository.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\SchoolContracts\\IGradeRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\SchoolAggregate\\SchoolContracts\\IGradeRepository.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\SchoolAggregate\\SchoolContracts\\IGradeRepository.cs",
-              "RelativeToolTip": "Domain\\SchoolAggregate\\SchoolContracts\\IGradeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:40:00.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "D:\\API\\MadreseV6\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-09T16:12:06.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\API\\MadreseV6\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-09T13:31:55.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TeachersGrade.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\ManyToMany\\TeachersGrade\\TeachersGrade.cs",
-              "RelativeDocumentMoniker": "Domain\\ManyToMany\\TeachersGrade\\TeachersGrade.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\ManyToMany\\TeachersGrade\\TeachersGrade.cs",
-              "RelativeToolTip": "Domain\\ManyToMany\\TeachersGrade\\TeachersGrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:52:26.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "StudentsCourse.cs",
-              "DocumentMoniker": "D:\\API\\MadreseV6\\Domain\\ManyToMany\\StudentsCourse\\StudentsCourse.cs",
-              "RelativeDocumentMoniker": "Domain\\ManyToMany\\StudentsCourse\\StudentsCourse.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Domain\\ManyToMany\\StudentsCourse\\StudentsCourse.cs",
-              "RelativeToolTip": "Domain\\ManyToMany\\StudentsCourse\\StudentsCourse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:23:05.99Z"
             }
           ]
         }

@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\API\\MadreseV6\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeacherRepository.cs",
+              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\TeacherRepository.cs",
+              "RelativeDocumentMoniker": "DataBase\\Repositories\\TeacherRepository.cs",
+              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\TeacherRepository.cs",
+              "RelativeToolTip": "DataBase\\Repositories\\TeacherRepository.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwFgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:36:16.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
+              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "Controllers\\TeacherController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:36:13.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GradeRepository.cs",
+              "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\GradeRepository.cs",
+              "RelativeDocumentMoniker": "DataBase\\Repositories\\GradeRepository.cs",
+              "ToolTip": "D:\\API\\MadreseV6\\DataBase\\Repositories\\GradeRepository.cs",
+              "RelativeToolTip": "DataBase\\Repositories\\GradeRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:29:02.532Z",
+              "EditorCaption": ""
             }
           ]
         }

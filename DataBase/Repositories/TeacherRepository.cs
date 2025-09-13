@@ -61,7 +61,11 @@ namespace MadreseV6.DataBase.Repositories
 
         public Teacher GetTeacher(int schoolid, int teacherid)
         {
-            var school = _context.Schools.Include(x=>x.Teachers).SingleOrDefault(x=>x.SchoolId==schoolid);
+            var school = _context.Schools
+                .Include(x=>x.Teachers)
+                .ThenInclude(x=>x.Grades)
+                .Include(x=>x.Teachers)
+                .ThenInclude(x=>x.Courses).SingleOrDefault(x=>x.SchoolId==schoolid);
             if (school == null)
                 throw new Exception("SchoolNotFoUnd");
             var teacher = school.Teachers.SingleOrDefault(x=>x.TeacherId==teacherid);
