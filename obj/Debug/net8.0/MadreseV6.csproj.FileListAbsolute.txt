@@ -170,3 +170,4 @@ D:\API\MadreseV6\obj\Debug\net8.0\MadreseV6.pdb
 D:\API\MadreseV6\obj\Debug\net8.0\MadreseV6.genruntimeconfig.cache
 D:\API\MadreseV6\obj\Debug\net8.0\ref\MadreseV6.dll
 D:\API\MadreseV6\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\API\MadreseV6\obj\Debug\net8.0\MadreseV6.sourcelink.json

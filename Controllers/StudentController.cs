@@ -1,5 +1,5 @@
-﻿using MadreseV6.Domain.DTOs;
-using MadreseV6.Domain.StudentAggregate.StudentAggregate;
+﻿using MadreseV6.Domain.StudentAggregate.StudentAggregate;
+using MadreseV6.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MadreseV6.Controllers

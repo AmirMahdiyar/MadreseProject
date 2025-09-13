@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "school",
-        "Type": "MadreseV6.Domain.DTOs.SchoolDTO",
+        "Type": "MadreseV6.DTOs.SchoolDTO",
         "IsRequired": true
       }
     ],
@@ -72,7 +72,7 @@
       },
       {
         "Name": "school",
-        "Type": "MadreseV6.Domain.DTOs.SchoolDTO",
+        "Type": "MadreseV6.DTOs.SchoolDTO",
         "IsRequired": true
       }
     ],
@@ -93,7 +93,7 @@
       },
       {
         "Name": "gradeDTO",
-        "Type": "MadreseV6.Domain.DTOs.GradeDTO",
+        "Type": "MadreseV6.DTOs.GradeDTO",
         "IsRequired": true
       }
     ],
@@ -177,7 +177,7 @@
       },
       {
         "Name": "grade",
-        "Type": "MadreseV6.Domain.DTOs.GradeDTO",
+        "Type": "MadreseV6.DTOs.GradeDTO",
         "IsRequired": true
       }
     ],
@@ -203,7 +203,7 @@
       },
       {
         "Name": "course",
-        "Type": "MadreseV6.Domain.DTOs.CourseDTO",
+        "Type": "MadreseV6.DTOs.CourseDTO",
         "IsRequired": true
       }
     ],
@@ -307,7 +307,7 @@
       },
       {
         "Name": "course",
-        "Type": "MadreseV6.Domain.DTOs.CourseDTO",
+        "Type": "MadreseV6.DTOs.CourseDTO",
         "IsRequired": true
       }
     ],
@@ -333,7 +333,7 @@
       },
       {
         "Name": "student",
-        "Type": "MadreseV6.Domain.DTOs.StudentDTO",
+        "Type": "MadreseV6.DTOs.StudentDTO",
         "IsRequired": true
       }
     ],
@@ -417,7 +417,7 @@
       },
       {
         "Name": "student",
-        "Type": "MadreseV6.Domain.DTOs.StudentDTO",
+        "Type": "MadreseV6.DTOs.StudentDTO",
         "IsRequired": true
       }
     ],
@@ -438,7 +438,7 @@
       },
       {
         "Name": "teacher",
-        "Type": "MadreseV6.Domain.DTOs.TeacherDTO",
+        "Type": "MadreseV6.DTOs.TeacherDTO",
         "IsRequired": true
       }
     ],
@@ -522,7 +522,7 @@
       },
       {
         "Name": "teacher",
-        "Type": "MadreseV6.Domain.DTOs.TeacherDTO",
+        "Type": "MadreseV6.DTOs.TeacherDTO",
         "IsRequired": true
       }
     ],

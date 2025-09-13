@@ -1,4 +1,4 @@
-﻿using MadreseV6.Domain.DTOs;
+﻿using MadreseV6.DTOs;
 
 namespace MadreseV6.Domain.SchoolAggregate.SchoolContracts
 {

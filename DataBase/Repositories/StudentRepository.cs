@@ -1,7 +1,7 @@
-﻿using MadreseV6.Domain.DTOs;
-using MadreseV6.Domain.ManyToMany.StudentsCourse;
+﻿using MadreseV6.Domain.ManyToMany.StudentsCourse;
 using MadreseV6.Domain.StudentAggregate;
 using MadreseV6.Domain.StudentAggregate.StudentAggregate;
+using MadreseV6.DTOs;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography.Xml;
 

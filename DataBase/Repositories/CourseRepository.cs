@@ -1,6 +1,6 @@
-﻿using MadreseV6.Domain.DTOs;
-using MadreseV6.Domain.SchoolAggregate;
+﻿using MadreseV6.Domain.SchoolAggregate;
 using MadreseV6.Domain.SchoolAggregate.SchoolContracts;
+using MadreseV6.DTOs;
 using Microsoft.EntityFrameworkCore;
 
 namespace MadreseV6.DataBase.Repositories

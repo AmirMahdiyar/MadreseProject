@@ -1,5 +1,5 @@
-﻿using MadreseV6.Domain.DTOs;
-using MadreseV6.Domain.TeacherAggregate.TeacherContract;
+﻿using MadreseV6.Domain.TeacherAggregate.TeacherContract;
+using MadreseV6.DTOs;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 

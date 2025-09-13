@@ -1,4 +1,4 @@
-﻿namespace MadreseV6.Domain.DTOs
+﻿namespace MadreseV6.DTOs
 {
     public class TeacherDTO
     {
