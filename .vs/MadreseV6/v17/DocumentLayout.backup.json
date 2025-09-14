@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\API\\MadreseV6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +19,12 @@
       "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|solutionrelative:database\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{893E00C6-A4D4-499C-A07B-DBE366FAA6A9}|MadreseV6.csproj|d:\\api\\madresev6\\database\\repositories\\schoolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,12 +78,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StudentController.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\StudentController.cs*",
-              "RelativeToolTip": "Controllers\\StudentController.cs*",
+              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T19:03:17.255Z",
@@ -91,20 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SchoolController.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\SchoolController.cs",
               "RelativeDocumentMoniker": "Controllers\\SchoolController.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\SchoolController.cs*",
-              "RelativeToolTip": "Controllers\\SchoolController.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwCgAAAAQAAAAAAAAAA==",
+              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\SchoolController.cs",
+              "RelativeToolTip": "Controllers\\SchoolController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAQwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T19:02:22.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CourseRepository.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\CourseRepository.cs",
               "RelativeDocumentMoniker": "DataBase\\Repositories\\CourseRepository.cs",
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\StudentRepository.cs",
               "RelativeDocumentMoniker": "DataBase\\Repositories\\StudentRepository.cs",
@@ -156,12 +156,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
-              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs*",
-              "RelativeToolTip": "Controllers\\TeacherController.cs*",
+              "ToolTip": "D:\\API\\MadreseV6\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "Controllers\\TeacherController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T12:36:13.259Z",
@@ -195,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GradeRepository.cs",
               "DocumentMoniker": "D:\\API\\MadreseV6\\DataBase\\Repositories\\GradeRepository.cs",
               "RelativeDocumentMoniker": "DataBase\\Repositories\\GradeRepository.cs",
