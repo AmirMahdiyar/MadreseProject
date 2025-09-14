@@ -4,10 +4,10 @@ namespace MadreseV6.Domain.StudentAggregate.StudentAggregate
 {
     public interface IStudentRepository
     {
-        void AddStudent(int schoolid,int gradeid,StudentDTO studentdto);
-        void RemoveStudent(int schoolid, int studentid);
-        Student GetStudent(int schoolid,int studentid);
-        List<Student> GetAllStudents(int schoolid);
-        void UpdateStudent(int schoolid,int studentid,StudentDTO studentdto);
+        Task AddStudentAsync(int schoolid,int gradeid,StudentDTO studentdto);
+        Task RemoveStudentAsync(int schoolid, int studentid);
+        Task<Student> GetStudentAsync(int schoolid,int studentid);
+        Task<List<Student>> GetAllStudentsAsync(int schoolid);
+        Task UpdateStudentAsync(int schoolid,int studentid,StudentDTO studentdto);
     }
 }

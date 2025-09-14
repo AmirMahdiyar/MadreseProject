@@ -14,56 +14,56 @@ namespace MadreseV6.DataBase.Repositories
             _context = dbContext;
         }
 
-        public void AddGrade(int schoolid, GradeDTO gradedto)
+        public async Task AddGradeAsync(int schoolid, GradeDTO gradedto)
         {
-            try
-            {
-                var school = _context.Schools.Single(x => x.SchoolId == schoolid);
-                
-                var Grade = new Grade()
-                {
-                    SchoolId = schoolid,
-                    GradeName = gradedto.GradeName,
-                    GradePlace = gradedto.GradePlace,
 
-                };
-                _context.Grades.Add(Grade);
-                _context.SaveChanges();
-            }
-            catch
+            var school = await _context.Schools.SingleOrDefaultAsync(x => x.SchoolId == schoolid);
+            if (school == null)
+                throw new Exception("DataNotFound");
+
+            var Grade = new Grade()
             {
-                throw new Exception("Something Went Wrong !");
-            }
+                SchoolId = schoolid,
+                GradeName = gradedto.GradeName,
+                GradePlace = gradedto.GradePlace,
+
+            };
+            await _context.Grades.AddAsync(Grade);
+            await _context.SaveChangesAsync();
+
+
         }
 
-        public void RemoveGrade(int schoolid, int gradeid)
+        public async Task RemoveGradeAsync(int schoolid, int gradeid)
         {
-            var grade = _context.Grades.SingleOrDefault(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            var grade = await _context.Grades.SingleOrDefaultAsync(x => x.SchoolId == schoolid && x.GradeId == gradeid);
             if (grade == null) throw new Exception("Grade Not Found");
             _context.Grades.Remove(grade);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
-        public Grade GetGrade(int schoolid, int gradeid)
+        public async Task<Grade> GetGradeAsync(int schoolid, int gradeid)
         {
-            var grade = _context.Grades.Include(x=>x.Courses).Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
-            if (grade == null) throw new Exception("Grade Not Found");
+            var grade = await _context.Grades.Include(x=>x.Courses).SingleOrDefaultAsync(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            if (grade == null) { throw new Exception("Grade Not Found"); }
             return grade;
         }
 
-        public List<Grade> GetAllGrades(int schoolid)
+        public async Task<List<Grade>> GetAllGradesAsync(int schoolid)
         {
-            return _context.Grades
+            var result = await _context.Grades
                                .Where(g => g.SchoolId == schoolid)
                                .Include(x=>x.Courses)                             
-                                        .ToList();
+                                        .ToListAsync();
+            return result;
         }
-        public void UpdateGrade(int schoolid, int gradeid, GradeDTO gradeDTO)
+        public async Task UpdateGradeAsync(int schoolid, int gradeid, GradeDTO gradeDTO)
         {
-            var grade = _context.Grades.Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            var grade = await _context.Grades.SingleOrDefaultAsync(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            if (grade == null) throw new Exception("DataNotFound");
             grade.GradeName = gradeDTO.GradeName;
             grade.GradePlace = gradeDTO.GradePlace;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
 
         }

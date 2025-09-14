@@ -2,6 +2,7 @@
 using MadreseV6.Domain.SchoolAggregate.SchoolContracts;
 using MadreseV6.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace MadreseV6.Controllers
 {
@@ -22,31 +23,33 @@ namespace MadreseV6.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddAStudent([FromBody] SchoolDTO school)
+        public async Task<IActionResult> AddASchool([FromBody] SchoolDTO school)
         {
-            _schoolRepository.AddSchool(school);
+            await _schoolRepository.AddSchoolAsync(school);
             return Ok();
         }
         [HttpDelete("{schoolid}")]
-        public IActionResult DeleteSchool(int schoolid)
+        public async Task<IActionResult> DeleteSchool(int schoolid)
         {
-            _schoolRepository.RemoveSchool(schoolid);
+            await _schoolRepository.RemoveSchoolAsync(schoolid);
             return Ok();
         }
         [HttpGet]
-        public IActionResult SeeAllSchools()
+        public async Task<IActionResult> SeeAllSchools()
         {
-            return Ok(_schoolRepository.GetAllSchools());
+            var result = await _schoolRepository.GetAllSchoolsAsync();
+            return Ok(result);
         }
         [HttpGet("{schoolid}")]
-        public IActionResult SeeASchool(int schoolid)
+        public async Task<IActionResult> SeeASchool(int schoolid)
         {
-            return Ok(_schoolRepository.GetSchool(schoolid));
+            var result = await _schoolRepository.GetSchoolAsync(schoolid);
+            return Ok(result);
         }
         [HttpPut("{schoolid}")]
-        public IActionResult UpdateASchool(int schoolid, [FromBody] SchoolDTO school)
+        public async Task<IActionResult> UpdateASchool(int schoolid, [FromBody] SchoolDTO school)
         {
-            _schoolRepository.UpdateSchool(schoolid, school);
+            await _schoolRepository.UpdateSchoolAsync(schoolid, school);
             return Ok();
         }
 
@@ -54,31 +57,31 @@ namespace MadreseV6.Controllers
 
 
         [HttpPost("{schoolid}/Grades")]
-        public IActionResult AddAGrade(int schoolid , GradeDTO gradeDTO)
+        public async Task<IActionResult> AddAGrade(int schoolid , GradeDTO gradeDTO)
         {
-            _gradeRepository.AddGrade(schoolid, gradeDTO);
+            await _gradeRepository.AddGradeAsync(schoolid, gradeDTO);
             return Ok();
         }
         [HttpDelete("{schoolid}/Grades/{gradeid}")]
-        public IActionResult DeleteGrade(int schoolid,int gradeid)
+        public async Task<IActionResult> DeleteGrade(int schoolid,int gradeid)
         {
-            _gradeRepository.RemoveGrade(schoolid, gradeid);
+            await _gradeRepository.RemoveGradeAsync(schoolid, gradeid);
             return Ok();
         }
         [HttpGet("{schoolid}/Grades/{gradeid}")]
-        public IActionResult SeeAGrade(int schoolid, int gradeid)
+        public async Task<IActionResult> SeeAGrade(int schoolid, int gradeid)
         {
-            return Ok(_gradeRepository.GetGrade(schoolid, gradeid));
+            return Ok(await _gradeRepository.GetGradeAsync(schoolid, gradeid));
         }
         [HttpGet("{schoolid}/Grades")]
-        public IActionResult SeeAllGrades(int schoolid)
+        public async Task<IActionResult> SeeAllGrades(int schoolid)
         {
-            return Ok(_gradeRepository.GetAllGrades(schoolid));
+            return Ok(await _gradeRepository.GetAllGradesAsync(schoolid));
         }
         [HttpPut("{schoolid}/Grades/{gradeid}")]
-        public IActionResult UpdateAGrade(int schoolid,int gradeid , GradeDTO grade)
+        public async Task<IActionResult> UpdateAGrade(int schoolid,int gradeid , GradeDTO grade)
         {
-            _gradeRepository.UpdateGrade(schoolid ,gradeid,grade);
+            await _gradeRepository.UpdateGradeAsync(schoolid ,gradeid,grade);
             return Ok();
         }
 
@@ -87,31 +90,31 @@ namespace MadreseV6.Controllers
 
 
         [HttpPost("{schoolid}/Grades/{gradeid}/Courses")]
-        public IActionResult AddACourse(int schoolid,int gradeid,CourseDTO course)
+        public async Task<IActionResult> AddACourse(int schoolid,int gradeid,CourseDTO course)
         {
-            _courseRepository.AddCourse(schoolid,gradeid,course);
+            await _courseRepository.AddCourseAsync(schoolid,gradeid,course);
             return Ok();
         }
         [HttpDelete("{schoolid}/Grades/{gradeid}/Courses/{courseid}")]
-        public IActionResult DeleteCourse(int schoolid,int gradeid,int courseid)
+        public async Task<IActionResult> DeleteCourse(int schoolid,int gradeid,int courseid)
         {
-            _courseRepository.RemoveCourse(schoolid, gradeid, courseid);
+            await _courseRepository.RemoveCourseAsync(schoolid, gradeid, courseid);
             return Ok();
         }
         [HttpGet("{schoolid}/Grades/{gradeid}/Courses/{courseid}")]
-        public IActionResult SeeACourse(int schoolid,int gradeid,int courseid)
+        public async Task<IActionResult> SeeACourse(int schoolid,int gradeid,int courseid)
         {
-            return Ok(_courseRepository.GetCourse(schoolid,gradeid,courseid));
+            return Ok(await _courseRepository.GetCourseAsync(schoolid, gradeid, courseid));
         }
         [HttpGet("{schoolid}/Grades/{gradeid}/Courses")]
-        public IActionResult SeeAllCourses(int schoolid,int gradeid)
+        public async Task<IActionResult> SeeAllCourses(int schoolid,int gradeid)
         {
-            return Ok(_courseRepository.GetAllCourses(schoolid,gradeid));
+            return Ok(await _courseRepository.GetAllCoursesAsync(schoolid, gradeid));
         }
         [HttpPut("{schoolid}/Grades/{gradeid}/Courses/{courseid}")]
-        public IActionResult UpdateACourse(int schoolid,int gradeid,int courseid,CourseDTO course)
+        public async Task<IActionResult> UpdateACourse(int schoolid,int gradeid,int courseid,CourseDTO course)
         {
-            _courseRepository.UpdateCourse(schoolid,gradeid,courseid,course);
+            await _courseRepository.UpdateCourseAsync(schoolid, gradeid, courseid, course);
             return Ok();
         }
 

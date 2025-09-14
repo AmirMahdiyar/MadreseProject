@@ -17,37 +17,37 @@ namespace MadreseV6.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddATeacher(int schoolid,TeacherDTO teacher)
+        public async Task<IActionResult> AddATeacher(int schoolid,TeacherDTO teacher)
         {
-            _teacherRepository.AddTeacher(schoolid, teacher);
+            await _teacherRepository.AddTeacherAsync(schoolid, teacher);
             return Ok();
         }
         [HttpDelete("{teacherid}")]
-        public IActionResult DeleteATeacher(int schoolid, int teacherid)
+        public async Task<IActionResult> DeleteATeacher(int schoolid, int teacherid)
         {
-            _teacherRepository.RemoveTeacher(schoolid, teacherid);
+            await _teacherRepository.RemoveTeacherAsync(schoolid, teacherid);
             return Ok();
         }
         [HttpGet]
-        public IActionResult SeeAllTeachers(int schoolid)
+        public async Task<IActionResult> SeeAllTeachers(int schoolid)
         {
-            return Ok(_teacherRepository.GetAllTeachers(schoolid));
+            return Ok(await _teacherRepository.GetAllTeachersAsync(schoolid));
         }
         [HttpGet("{teacherid}")]
-        public IActionResult SeeATeacher(int schoolid,int teacherid)
+        public async Task<IActionResult> SeeATeacher(int schoolid,int teacherid)
         {
-            return Ok(_teacherRepository.GetTeacher(schoolid,teacherid));
+            return Ok(await _teacherRepository.GetTeacherAsync(schoolid, teacherid));
         }
         [HttpPut("{teacherid}")]
-        public IActionResult UpdateATeacher(int schoolid,int teacherid,TeacherDTO teacher)
+        public async Task<IActionResult> UpdateATeacher(int schoolid,int teacherid,TeacherDTO teacher)
         {
-            _teacherRepository.UpdateTeacher(schoolid, teacherid, teacher);
+            await _teacherRepository.UpdateTeacherAsync(schoolid, teacherid, teacher);
             return Ok();
         }
         [HttpPost("{teacherid}/AddCourse")]
-        public IActionResult AppendTeacherToCourse(int schoolid,int gradeid,int courseid,int teacherid)
+        public async Task<IActionResult> AppendTeacherToCourse(int schoolid,int gradeid,int courseid,int teacherid)
         {
-            _teacherRepository.AddTeacherToACourse(schoolid,gradeid,courseid, teacherid); return Ok();
+            await _teacherRepository.AddTeacherToACourseAsync(schoolid, gradeid, courseid, teacherid); return Ok();
         }
     }
 }
