@@ -4,11 +4,11 @@ namespace MadreseV6.Domain.SchoolAggregate.SchoolContracts
 {
     public interface ISchoolRepository
     {
-        void AddSchool(SchoolDTO schooldto);
-        public void RemoveSchool(int schoolid);
-        public School GetSchool(int schoolid);
-        public List<School> GetAllSchools();
-        public void UpdateSchool(int schoolid, SchoolDTO schooldto);
+        Task AddSchoolAsync(SchoolDTO schooldto);
+        Task RemoveSchoolAsync(int schoolid);
+        Task<School> GetSchoolAsync(int schoolid);
+        Task<List<School>> GetAllSchoolsAsync();
+        Task UpdateSchoolAsync(int schoolid, SchoolDTO schooldto);
 
     }
 }

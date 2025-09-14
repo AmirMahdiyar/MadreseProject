@@ -14,10 +14,10 @@ namespace MadreseV6.DataBase.Repositories
             _context = dbContext;
         }
 
-        public void AddCourse(int schoolid, int gradeid, CourseDTO coursedto)
+        public async Task AddCourseAsync(int schoolid, int gradeid, CourseDTO coursedto)
         {
 
-            var grade = _context.Grades.SingleOrDefault(x => x.SchoolId == schoolid && x.GradeId == gradeid);
+            var grade = await _context.Grades.SingleOrDefaultAsync(x => x.SchoolId == schoolid && x.GradeId == gradeid);
             if (grade == null)
                 throw new Exception("School Or Grade Not Found !");
             var course = new Course()
@@ -28,38 +28,39 @@ namespace MadreseV6.DataBase.Repositories
                 GradeId = grade.GradeId,
 
             };
-            _context.Courses.Add(course);
-            _context.SaveChanges();
+            await _context.Courses.AddAsync(course);
+            await _context.SaveChangesAsync();
 
 
         }
 
-        public List<Course> GetAllCourses(int schoolid, int gradeid)
+        public async Task<List<Course>> GetAllCoursesAsync(int schoolid, int gradeid)
         {
-            return _context.Grades
+            var result = await _context.Grades
                            .Where(g => g.SchoolId == schoolid && g.GradeId == gradeid)
                            .SelectMany(g => g.Courses)
-                           .ToList();
+                           .ToListAsync();
+            return result;
         }
 
-        public Course GetCourse(int schoolid, int gradeid, int courseid)
+        public async Task<Course> GetCourseAsync(int schoolid, int gradeid, int courseid)
         {
             //var grade = _context.Grades.Include(g => g.Courses).Single(x => x.SchoolId == schoolid && x.GradeId == gradeid);
-            var school = _context.Schools.Single(x => x.SchoolId == schoolid);
-            if (school == null)
-                throw new Exception("DataNotFoundd");
-            var coursee = _context.Courses.Include(x => x.Students).Include(x => x.Teacher).SingleOrDefault(x=>x.GradeId == gradeid && x.CourseId == courseid);
-            if (coursee == null)
-                throw new Exception("DataNotFound");
+            var school= await _context.Schools.SingleOrDefaultAsync(x => x.SchoolId == schoolid);
+            var coursee = await _context.Courses.Include(x => x.Students).Include(x => x.Teacher).SingleOrDefaultAsync(x=>x.GradeId == gradeid && x.CourseId == courseid);
             //var course = grade.Courses.Single(x=>x.CourseId == courseid);
+
+            if (school == null || coursee == null)
+                throw new Exception("Data not found");
+
             return coursee;
         }
 
-        public void RemoveCourse(int schoolid, int gradeid, int courseid)
+        public async Task RemoveCourseAsync(int schoolid, int gradeid, int courseid)
         {
-            var course = _context.Courses
+            var course = await _context.Courses
                         .Include(c => c.Grade)
-                        .SingleOrDefault(c => c.CourseId == courseid
+                        .SingleOrDefaultAsync(c => c.CourseId == courseid
                          && c.GradeId == gradeid
                          && c.Grade.SchoolId == schoolid);
 
@@ -67,18 +68,18 @@ namespace MadreseV6.DataBase.Repositories
                 throw new Exception("Course not found in this school/grade!");
 
             _context.Courses.Remove(course);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void UpdateCourse(int schoolid, int gradeid, int courseid, CourseDTO coursedto)
+        public async Task UpdateCourseAsync(int schoolid, int gradeid, int courseid, CourseDTO coursedto)
         {
-            var course = _context.Courses.Include(x => x.Grade).Single(x=>x.CourseId ==courseid && x.GradeId == gradeid && x.Grade.SchoolId == schoolid);
+            var course = await  _context.Courses.Include(x => x.Grade).SingleOrDefaultAsync(x=>x.CourseId ==courseid && x.GradeId == gradeid && x.Grade.SchoolId == schoolid);
             if (course == null) throw new Exception("Data Not Found");
 
             course.CourseName = coursedto.CourseName;
             course.Duration = coursedto.Duration;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

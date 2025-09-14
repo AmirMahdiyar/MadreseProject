@@ -14,58 +14,59 @@ namespace MadreseV6.DataBase.Repositories
         {
             _context = dbContext;
         }
-            public void AddTeacher(int schoolid,TeacherDTO teacherdto)
+        public async Task AddTeacherAsync(int schoolid, TeacherDTO teacherdto)
+        {
+
+            var school = await _context.Schools.SingleOrDefaultAsync(x => x.SchoolId == schoolid);
+            if (school == null)
             {
+                throw new Exception("School not Found ! ");
+            }
 
-                    var school = _context.Schools.SingleOrDefault(x => x.SchoolId == schoolid);
-                if (school == null)
+            var teacher = new Teacher()
+            {
+                SchoolId = schoolid,
+                TeacherName = teacherdto.TeacherName,
+                TeacherBornDay = teacherdto.TeacherBornDay,
+
+            };
+            foreach (var GradeNumber in teacherdto.Grades)
+            {
+                var grade = await _context.Grades.SingleOrDefaultAsync(g => g.GradeId == GradeNumber && g.SchoolId == schoolid);
+                if (grade == null)
+                    throw new Exception($"Gradeid {GradeNumber} Not Found!");
+                teacher.Grades.Add(new Domain.ManyToMany.TeachersGrade.TeachersGrade()
                 {
-                    throw new Exception("School not Found ! ");
-                }
+                    GradeId = GradeNumber,
 
-                var teacher = new Teacher()
-                {
-                    SchoolId = schoolid,
-                    TeacherName = teacherdto.TeacherName,
-                    TeacherBornDay = teacherdto.TeacherBornDay,
-
-                };
-                foreach (var GradeNumber in teacherdto.Grades)
-                {
-                    var grade = _context.Grades.SingleOrDefault(g => g.GradeId == GradeNumber && g.SchoolId == schoolid);
-                    if (grade == null)
-                        throw new Exception($"Gradeid {GradeNumber} Not Found!");
-                    teacher.Grades.Add(new Domain.ManyToMany.TeachersGrade.TeachersGrade()
-                    {
-                        GradeId = GradeNumber,
-
-                    });
-
-                }
-                _context.Teachers.Add(teacher);
-                _context.SaveChanges();
-
-
+                });
 
             }
 
-        public List<Teacher> GetAllTeachers(int schoolid)
+            await _context.Teachers.AddAsync(teacher);
+            await _context.SaveChangesAsync();
+
+
+
+        }
+
+        public async Task<List<Teacher>> GetAllTeachersAsync(int schoolid)
         {
-            var school = _context.Schools.Single(x=>x.SchoolId == schoolid);
-            var teachers = _context.Teachers.Include(x=>x.Courses).Include(x=>x.Grades).Where(x=>x.SchoolId ==schoolid).ToList();
+            var school = await _context.Schools.SingleOrDefaultAsync(x=>x.SchoolId == schoolid);
+            var teachers =await _context.Teachers.Include(x=>x.Courses).Include(x=>x.Grades).Where(x=>x.SchoolId ==schoolid).ToListAsync();
             
             if (school == null)
                 throw new Exception("DataNotFound");
             return teachers;
         }
 
-        public Teacher GetTeacher(int schoolid, int teacherid)
+        public async Task<Teacher> GetTeacherAsync(int schoolid, int teacherid)
         {
-            var school = _context.Schools
+            var school = await _context.Schools
                 .Include(x=>x.Teachers)
                 .ThenInclude(x=>x.Grades)
                 .Include(x=>x.Teachers)
-                .ThenInclude(x=>x.Courses).SingleOrDefault(x=>x.SchoolId==schoolid);
+                .ThenInclude(x=>x.Courses).SingleOrDefaultAsync(x=>x.SchoolId==schoolid);
             if (school == null)
                 throw new Exception("SchoolNotFoUnd");
             var teacher = school.Teachers.SingleOrDefault(x=>x.TeacherId==teacherid);
@@ -74,9 +75,9 @@ namespace MadreseV6.DataBase.Repositories
             return teacher;
         }
 
-        public void RemoveTeacher(int schoolid, int teacherid)
+        public async Task RemoveTeacherAsync(int schoolid, int teacherid)
         {
-            var teacher = _context.Teachers.SingleOrDefault(x=>x.SchoolId==schoolid && x.TeacherId == teacherid);
+            var teacher = await _context.Teachers.SingleOrDefaultAsync(x=>x.SchoolId==schoolid && x.TeacherId == teacherid);
             if (teacher == null)
                 throw new Exception("Data Not Found");
             _context.Teachers.Remove(teacher);
@@ -84,36 +85,36 @@ namespace MadreseV6.DataBase.Repositories
 
         }
 
-        public void UpdateTeacher(int schoolid, int teacherid,TeacherDTO teacherdto)
+        public async Task UpdateTeacherAsync(int schoolid, int teacherid,TeacherDTO teacherdto)
         {
-            var school = _context.Schools.Include(x => x.Teachers).SingleOrDefault(x => x.SchoolId == schoolid);
+            var school = await _context.Schools.Include(x => x.Teachers).SingleOrDefaultAsync(x => x.SchoolId == schoolid);
             if (school == null) throw new Exception("SchoolNotFOund");
             var teacher = school.Teachers.SingleOrDefault(x=>x.TeacherId == teacherid);
             if (teacher == null) throw new Exception("TeacherNotFound");
             teacher.TeacherName = teacherdto.TeacherName;
             teacher.TeacherBornDay = teacherdto.TeacherBornDay;
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void AddTeacherToACourse(int schoolid,int gradeid,int courseid,int teacherid)
+        public async Task AddTeacherToACourseAsync(int schoolid,int gradeid,int courseid,int teacherid)
         {
         
-            var course = _context.Courses
+            var course = await _context.Courses
                 .Include(c => c.Grade)
-                .SingleOrDefault(c => c.CourseId == courseid && c.GradeId == gradeid && c.Grade.SchoolId == schoolid);
+                .SingleOrDefaultAsync(c => c.CourseId == courseid && c.GradeId == gradeid && c.Grade.SchoolId == schoolid);
 
             if (course == null)
                 throw new Exception("Course not found in this school/grade");
 
-            var teacher = _context.Teachers
-                .SingleOrDefault(t => t.TeacherId == teacherid && t.SchoolId == schoolid);
+            var teacher = await _context.Teachers
+                .SingleOrDefaultAsync(t => t.TeacherId == teacherid && t.SchoolId == schoolid);
 
             if (teacher == null)
                 throw new Exception("Teacher not found in this school");
 
             course.TeacherId = teacherid;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         
 
     }

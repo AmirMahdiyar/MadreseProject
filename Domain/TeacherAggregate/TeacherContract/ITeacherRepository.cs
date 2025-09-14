@@ -4,12 +4,12 @@ namespace MadreseV6.Domain.TeacherAggregate.TeacherContract
 {
     public interface ITeacherRepository
     {
-        void AddTeacher(int schoolid, TeacherDTO teacherdto);
-        void RemoveTeacher(int schoolid,int teacherid);
-        Teacher GetTeacher(int schoolid,int teacherid);
-        List<Teacher> GetAllTeachers(int schoolid);
-        void UpdateTeacher(int schoolid,int teacherid,TeacherDTO teacherdto);
-        public void AddTeacherToACourse(int schoolid, int gradeid, int courseid, int teacherid);
+        Task AddTeacherAsync(int schoolid, TeacherDTO teacherdto);
+        Task RemoveTeacherAsync(int schoolid,int teacherid);
+        Task<Teacher> GetTeacherAsync(int schoolid,int teacherid);
+        Task<List<Teacher>> GetAllTeachersAsync(int schoolid);
+        Task UpdateTeacherAsync(int schoolid,int teacherid,TeacherDTO teacherdto);
+        Task AddTeacherToACourseAsync(int schoolid, int gradeid, int courseid, int teacherid);
 
     }
 }

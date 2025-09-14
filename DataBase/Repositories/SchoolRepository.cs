@@ -14,74 +14,69 @@ namespace MadreseV6.DataBase.Repositories
             _context = dbContext;
         }
 
-        public void AddSchool(SchoolDTO schooldto)
+        public async Task AddSchoolAsync(SchoolDTO schooldto)
         {
-            try
-            {
 
-                var school = new School
-                {
-                    SchoolName = schooldto.SchoolName,
-                    PhoneNumber = schooldto.PhoneNumber,
-                    CreationDate = schooldto.CreationDate
-                };
 
-                _context.Schools.Add(school);
-                _context.SaveChanges();
-            }
-            catch
+
+            var school = new School
             {
-                throw new Exception("Error !");
-            }
+                SchoolName = schooldto.SchoolName,
+                PhoneNumber = schooldto.PhoneNumber,
+                CreationDate = schooldto.CreationDate
+            };
+
+            await _context.Schools.AddAsync(school);
+            await _context.SaveChangesAsync();
+
 
 
         }
-        public void RemoveSchool(int schoolid)
+        public async Task RemoveSchoolAsync(int schoolid)
         {
-            try
+            
+            
+            var school = await _context.Schools.FirstOrDefaultAsync(x => x.SchoolId == schoolid);
+            if (school == null)
             {
-                var school = _context.Schools.First(x => x.SchoolId == schoolid);
-                if (school != null)
-                {
-                    _context.Schools.Remove(school);
-                    _context.SaveChanges();
-                }
-            }
-            catch
-            {
-                throw new Exception("School Not Found");
-            }
-        }
-
-        public School GetSchool(int schoolid)
-        {
-            var school = _context.Schools.Include(x=>x.Grades).ThenInclude(x=>x.Courses).FirstOrDefault(x => x.SchoolId == schoolid);
-            if (school != null)
-            {
-                return school;
-
+                throw new Exception("");
             }
             else
             {
+                _context.Schools.Remove(school);
+                await _context.SaveChangesAsync();
+            }
+            
+        }
+
+        public async Task<School> GetSchoolAsync(int schoolid)
+        {
+            var school = await _context.Schools.Include(x=>x.Grades).ThenInclude(x=>x.Courses).FirstOrDefaultAsync(x => x.SchoolId == schoolid);
+            if (school == null)
+            {
                 throw new Exception("School Not Found");
+            }
+            else
+            {
+                return school;
             }
 
         }
-        public List<School> GetAllSchools()
+        public async Task<List<School>> GetAllSchoolsAsync()
         {
-            return _context.Schools.Include(x=>x.Grades).ThenInclude(x=>x.Courses).ToList();
+            return await _context.Schools.Include(x=>x.Grades).ThenInclude(x=>x.Courses).ToListAsync();
         }
 
-        public void UpdateSchool(int schoolid , SchoolDTO schooldto)
+        public async Task UpdateSchoolAsync(int schoolid , SchoolDTO schooldto)
         {
-            var school = _context.Schools.Find(schoolid);
+            var school = await _context.Schools.FindAsync(schoolid);
             if (school == null)
                 throw new Exception("School not found");
             school.SchoolName = schooldto.SchoolName;
             school.PhoneNumber = schooldto.PhoneNumber;
             school.CreationDate = schooldto.CreationDate;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
 

@@ -16,34 +16,34 @@ namespace MadreseV6.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddAStudent(int schoolid,int gradeid,StudentDTO student)
+        public async Task<IActionResult> AddAStudent(int schoolid,int gradeid,StudentDTO student)
         {
-            _studentRepository.AddStudent(schoolid,gradeid,student);
+            await _studentRepository.AddStudentAsync(schoolid,gradeid,student);
             return Ok();
         }
         [HttpDelete("{studentid}")]
-        public IActionResult DeleteAStudent(int schoolid,int studentid)
+        public async Task<IActionResult> DeleteAStudent(int schoolid,int studentid)
         {
-            _studentRepository.RemoveStudent(schoolid,studentid);
+            await _studentRepository.RemoveStudentAsync(schoolid, studentid);
             return Ok();
         }
         [HttpGet("{studentid}")]   
-        public IActionResult SeeAStudent(int schoolid,int studentid)
+        public async Task<IActionResult> SeeAStudent(int schoolid,int studentid)
         {
-            return Ok(_studentRepository.GetStudent(schoolid,studentid));
+            return Ok(await _studentRepository.GetStudentAsync(schoolid, studentid));
 
         }
         [HttpGet]
-        public IActionResult SeeAllStudents(int schoolid)
+        public async Task<IActionResult> SeeAllStudents(int schoolid)
         {
-            return Ok(_studentRepository.GetAllStudents(schoolid));
+            return Ok(await _studentRepository.GetAllStudentsAsync(schoolid));
 
         }
 
         [HttpPut("{studentid}")]
-        public IActionResult UpdateAStudent(int schoolid,int studentid,StudentDTO student)
+        public async Task<IActionResult> UpdateAStudent(int schoolid,int studentid,StudentDTO student)
         {
-            _studentRepository.UpdateStudent(schoolid,studentid,student); return Ok();
+            await _studentRepository.UpdateStudentAsync(schoolid, studentid, student); return Ok();
         }
 
 

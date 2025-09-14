@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "MadreseV6.Controllers.SchoolController",
-    "Method": "AddAStudent",
+    "Method": "AddASchool",
     "RelativePath": "School",
     "HttpMethod": "POST",
     "IsController": true,
